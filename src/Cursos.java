@@ -17,8 +17,6 @@ class Curso{
         System.out.println("Creditos: " + creditos);
     }
     public void editarCredito(Scanner entrada){
-        System.out.println("Actualizando créditos...");
-        System.out.println("Actualizar créditos del curso: ");
         creditos = entrada.nextInt();
         entrada.nextLine();
     }
@@ -47,10 +45,11 @@ public class Cursos{
         while (selec.equals("SI")){
             System.out.println("Ingrese el nuevo valor de créditos: ");
             curso.editarCredito(scanner);
-            System.out.println("------------------");
-            System.out.println("Valor actualizado.");
-            System.out.println("------------------");
+
             curso.mostrarInfo();
+            System.out.println("Editar créditos del curso (SI/NO): ");
+            selec = scanner.nextLine();
+            selec = selec.toUpperCase(Locale.ROOT);
         }
         System.out.println("Curso ingresado.");
         scanner.close();
