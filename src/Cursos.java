@@ -1,5 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
+import java.lang.String;
 
 class Curso{
     String nombre, codigo;
