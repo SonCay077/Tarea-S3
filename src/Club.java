@@ -16,7 +16,7 @@ class Jugador{
         System.out.println("Posición: " +posicion);
         System.out.println("Número: " + numero);
     }
-    public void editarCredito(Scanner entrada){
+    public void editarNumero(Scanner entrada){
         numero = entrada.nextInt();
         entrada.nextLine();
     }
@@ -44,7 +44,7 @@ public class Club{
 
         while (selec.equals("SI")){
             System.out.println("Ingrese el nuevo número del jugador: ");
-            jugador.editarCredito(scanner);
+            jugador.editarNumero(scanner);
 
             jugador.mostrarInfo();
             System.out.println("Editar número del jugador (SI/NO): ");
